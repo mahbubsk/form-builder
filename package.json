@@ -1,0 +1,14 @@
+{
+  "name": "form-builder",
+  "version": "1.0.0",
+  "description": "this project is a form builder project",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass sass/main.scss css/main.css"
+  },
+  "author": "Asief Mahir",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.30.0"
+  }
+}

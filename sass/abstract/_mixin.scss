@@ -1,0 +1,17 @@
+@mixin d-flex($justify-content) {
+    display: flex;
+    align-items: center;
+    justify-content: $justify-content;
+}
+
+@mixin d-flex-align($align-items) {
+    display:flex;
+    align-items: $align-items;
+    justify-content: space-between;
+}
+
+@mixin overflow-scroll{
+    overflow:scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}

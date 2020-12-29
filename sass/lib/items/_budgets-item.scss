@@ -1,0 +1,50 @@
+/*
+    Budgets-item (budgets single item)
+
+    Markup:
+    <li class="budgets-item shadow--sm margin--t">
+        <div class="budgets-item__info padding--md">
+            <img class="budgets-item__info__icon" src="../../icons/travel.svg"/>
+            <p class="budgets-item__info__text text--white">some text</p>
+        </div>
+        <div class="budgets-item__amount bg--white align--center">
+            <p>200/-</p>
+        </div>
+    </li>
+
+    Styleguide Lib.items.budgets-item
+*/
+
+
+.budgets-item{
+    width:100%;
+    height: 3rem;
+    @include d-flex(space-between);
+    border-radius: $border-radius-md;
+
+    &__info{
+        background-color: $info-color;
+        @include d-flex(space-between);
+        border-radius: $border-radius-md 0px 0px $border-radius-md;
+        height: 100%;
+        width:65%;
+
+        // &__icon{
+
+        // }
+
+        &__text{
+            flex-grow: 2;
+            margin-left: 0.8rem;
+            font-size: $font-size-title-sm;
+        }
+
+    }
+
+    &__amount{
+        @include d-flex(center);
+        width:35%;
+        height:100%;
+        border-radius: 0px $border-radius-md $border-radius-md 0px;
+    }
+}

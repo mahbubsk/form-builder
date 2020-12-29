@@ -1,0 +1,37 @@
+/*
+    card (it's a pre build card with a background image)
+
+    Markup:
+    <li class="card margin--auto margin--b padding--md text--white">
+        <p class="card__title">
+            Dutch Bangla Bank
+        </p>
+        <p class="card__footer text--white">
+            27,550 TK
+        </p>
+    </li>
+
+    Styleguide Lib.cards.card
+*/
+
+.card {
+	background-image: url('../img/card-bg.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 14.375rem;
+	height: 8.125rem;
+	position: relative;
+	&__title {
+		font-size: $font-size-title-lg;
+		font-weight: $font-weight-semi-bold;
+		position: absolute;
+	}
+
+	&__footer {
+		font-size: $font-size-title-xlg;
+		position: absolute;
+		bottom: 15px;
+		right: 15px;
+	}
+}

@@ -1,0 +1,51 @@
+/*
+    Dropdown-Menu (dropdown menu with some navigation items)
+
+    Markup:
+    <ul class="dropdown-menu shadow--md padding--md">
+        <li class="dropdown-menu__item">
+            <img class="dropdown-menu__icon" src="../../icons/accounts-drop.svg"/>
+            <a class="dropdown-menu__link text--gray" href="#">add account</a>
+        </li>
+        <li class="dropdown-menu__item">
+            <img class="dropdown-menu__icon" src="../../icons/transaction-drop.svg"/>
+            <a class="dropdown-menu__link text--gray" href="#">add transaction</a>
+        </li>
+        <li class="dropdown-menu__item">
+            <img class="dropdown-menu__icon" src="../../icons/budget-drop.svg"/>
+            <a class="dropdown-menu__link text--gray" href="#">add budget</a>
+        </li>
+    </ul>
+
+    Styleguide Blocks.dropdown.dropdown-menu
+*/
+
+
+.dropdown-menu{
+    width:14rem;
+    height:11.25rem;
+    background:$white-color;
+    
+    &__item{
+        @include d-flex(space-between);
+        height:30%;
+        font-weight: $font-weight-medium;
+        font-size: $font-size-title-md;
+        list-style-type: none;
+        transition: .4s;
+        cursor:pointer;
+        
+    }
+    
+    // &__icon{
+    //     /*not used any kind of design*/
+        
+    // }
+
+    &__link{
+        text-decoration: none;
+        flex-grow: 2;
+        margin-left:0.8rem; 
+    }
+
+}
